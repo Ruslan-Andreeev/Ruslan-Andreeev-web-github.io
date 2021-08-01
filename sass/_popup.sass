@@ -1,0 +1,238 @@
+.overlay
+    background-color: rgba(0, 0, 0, 0.7)
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    z-index: 8
+    display: none
+
+.overlay-close
+    position: absolute
+    width: 40px
+    height: 40px
+    top: 30px
+    right: 50px
+    cursor: pointer
+    &::after
+        content: ''
+        position: absolute
+        width: 40px
+        height: 2px
+        right: 0px
+        top: 20px
+        background-color: #FFF
+        cursor: pointer
+        transform: rotate(45deg)
+    &::before
+        content: ''
+        position: absolute
+        width: 40px
+        height: 2px
+        right: 0px
+        top: 20px
+        background-color: #FFF
+        cursor: pointer
+        transform: rotate(-45deg)
+
+.popup-wrap-img
+    position: fixed
+    z-index: 10
+    max-width: 1200px
+    width: 50%
+    height: 100vh
+    overflow: auto
+    left: 50%
+    top: 50%
+    z-index: 12
+    transform: translate(-50%, -50%)
+    display: none
+    img
+        width: 100%
+        vertical-align: middle
+        display: block
+        overflow-y: scroll
+        opacity: 1
+.body-modal
+    overflow: hidden
+
+.popup
+    position: fixed
+    max-width: 1200px
+    width: 100%
+    left: 50%
+    top: 50%
+    z-index: 12
+    transform: translate(-50%, -50%)
+    background-color: #FFF
+    display: none
+.popup-sent
+    display: none
+    background-color: #151515
+    width: 90%
+    padding-top: 50px
+    label
+        width: 48%
+        input
+            background: #151515
+            width: 50%
+            margin-left: 50%
+            transform: translateX(-50%)
+            font-size: 18px
+            color: #FFF
+            height: 50px
+            padding-left: 15px
+            margin-bottom: 30px
+            // border-top: none
+            // border-left: none
+            // border-right: none
+        textarea
+            background: #151515
+            font-size: 18px
+            color: #FFF
+            resize: none
+            margin-left: 50%
+            transform: translateX(-50%)
+            width: 50%
+            padding-left: 15px
+            padding-top: 15px
+            margin-bottom: 40px
+    #popup-btn
+        width: min-content
+        outline: none
+        border: none
+        padding-top: 13px
+        padding-left: 40px
+        padding-right: 40px
+        padding-bottom: 17px
+        background-color: #bdb8b8
+        color: #000
+        font-size: 20px
+        cursor: pointer
+        margin-left: 50%
+        transform: translateX(-50%)
+        &:hover
+            transition: 0.3s
+            background-color: #f70404
+            color: #FFF
+.popup-contact
+    display: flex
+    margin-bottom: 30px
+    width: 100%
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding-top: 35px
+.popup-block
+    width: 300px
+.popup-order
+    &-btn
+        margin-bottom: 30px
+.popup-visit-text
+    p
+        font-family: 'Roboto', sans-serif
+        color: #fff
+        text-align: center
+        font-size: 32px
+        margin-bottom: 30px
+.popup-order
+    background-color: #151515
+    width: 800px
+    padding-top: 50px
+    display: none
+    label
+        width: 48%
+        input
+            background: #151515
+            width: 50%
+            margin-left: 50%
+            transform: translateX(-50%)
+            font-size: 18px
+            color: #FFF
+            height: 50px
+            padding-left: 15px
+            margin-bottom: 30px
+            // border-top: none
+            // border-left: none
+            // border-right: none
+        textarea
+            background: #151515
+            font-size: 18px
+            color: #FFF
+            resize: none
+            margin-left: 50%
+            transform: translateX(-50%)
+            width: 50%
+            padding-left: 15px
+            padding-top: 15px
+            margin-bottom: 40px
+    #popup-btn
+        width: min-content
+        outline: none
+        border: none
+        padding-top: 13px
+        padding-left: 40px
+        padding-right: 40px
+        padding-bottom: 17px
+        background-color: #bdb8b8
+        color: #000
+        font-size: 20px
+        cursor: pointer
+        margin-left: 50%
+        transform: translateX(-50%)
+        &:hover
+            transition: 0.3s
+            background-color: #f70404
+            color: #FFF
+.popup-corporate
+    background-color: #151515
+    width: 800px
+    padding-top: 50px
+    display: none
+    label
+        width: 48%
+        input
+            background: #151515
+            width: 50%
+            margin-left: 50%
+            transform: translateX(-50%)
+            font-size: 18px
+            color: #FFF
+            height: 50px
+            padding-left: 15px
+            margin-bottom: 30px
+            // border-top: none
+            // border-left: none
+            // border-right: none
+        textarea
+            background: #151515
+            font-size: 18px
+            color: #FFF
+            resize: none
+            margin-left: 50%
+            transform: translateX(-50%)
+            width: 50%
+            padding-left: 15px
+            padding-top: 15px
+            margin-bottom: 40px
+    #popup-btn
+        width: min-content
+        outline: none
+        border: none
+        padding-top: 13px
+        padding-left: 40px
+        padding-right: 40px
+        padding-bottom: 17px
+        background-color: #bdb8b8
+        color: #000
+        font-size: 20px
+        cursor: pointer
+        margin-left: 50%
+        transform: translateX(-50%)
+        &:hover
+            transition: 0.3s
+            background-color: #f70404
+            color: #FFF

@@ -1,0 +1,522 @@
+@media screen and ( min-width: 1400px )
+    .hero::after
+        right: 10%
+
+@media screen and ( max-width: 1200px )
+    .container
+        max-width: 960px
+    .hero::after
+        top: 0
+        right: 0
+    .hero
+        span
+            font-size: 26px
+            margin-bottom: 10px
+            display: block
+        h1
+            font-size: 50px
+            line-height: 60px
+        p
+            width: 414px
+    .works-link-margin
+        white-space: break-spaces
+    .about-block h3
+        font-size: 24px
+    .about-block
+        width: calc(50% - 19px)
+    .service-content-left
+        span
+            padding-top: 30px
+            &::after
+                top: 21px
+@media screen and ( max-width: 991px )
+    .container
+        max-width: 739px
+    .hero::after
+        display: none
+    .hero::before
+        display: block
+    .hero
+        h1
+            font-size: 36px
+            line-height: 39px
+        span
+            font-size: 22px
+    .header-content
+        img
+            width: 120px
+    .about
+        padding-top: 50px
+        h1
+            font-size: 36px
+            margin-bottom: 40px
+    .about-block
+        width: 100%
+        padding-left: 100px
+        margin-bottom: 20px
+        h3
+            font-size: 22px
+        &::after
+            top: 50%
+            left: 20px
+            transform: translateY(-50%)
+    .service
+        padding-top: 50px
+        padding-bottom: 10px
+        h1
+            font-size: 36px
+            margin-bottom: 62px
+        &-content
+            flex-wrap: wrap
+            &-left
+                width: 100%
+                padding: 30px 20px
+                margin-bottom: 40px
+                p
+                    height: auto
+                    margin-bottom: 20px
+    .works
+        padding-top: 50px
+        padding-bottom: 20px
+        h1
+            font-size: 36px
+            margin-bottom: 50px
+        &-content-block
+            width: 100%
+    .contacts
+        padding-top: 50px
+        h1
+            font-size: 36px
+        &-content
+            flex-wrap: wrap
+            margin-bottom: 50px
+            &-left
+                width: 100%
+            &-right
+                width: 100%
+    .popup-order
+        width: 750px
+@media screen and ( max-width: 767px )
+    .container
+        max-width: 540px
+    body
+        position: relative
+    .header
+        position: fixed
+        z-index: 14
+        left: 0
+        top: 0
+        width: 100%
+    .nav
+        position: fixed
+        z-index: 10
+        background-color: #151515
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        padding-top: 20px
+        text-align: center
+        width: 100%
+        display: none
+        ul
+            flex-direction: column
+            li
+                margin-bottom: 15px
+    .burger-active
+        .burger-slide
+            height: 0
+            position: fixed
+            z-index: 12
+
+            &::after
+                transform: rotate(-45deg)
+                top: -1px
+                left: 0
+                transition: 0.3s
+            &::before
+                transform: rotate(45deg)
+                top: -1px
+                left: 0
+                transition: 0.3s
+
+    .burger
+        width: 40px
+        height: 20px
+        cursor: pointer
+        span
+            width: 40px
+            height: 2px
+            background-color: #fff
+            position: relative
+            display: block
+            &::before
+                content: ''
+                position: absolute
+                top: -10px
+                left: 0
+                background-color: #fff
+                width: 40px
+                height: 2px
+            &::after
+                content: ''
+                position: absolute
+                top: 10px
+                left: 0
+                background-color: #fff
+                width: 40px
+                height: 2px
+    .header-content
+        align-items: baseline
+    .hero
+        span
+            font-size: 18px
+        h1
+            font-size: 26px
+            width: 244px
+            line-height: 30px
+        p
+            font-size: 16px
+            display: none
+        &-btn
+            font-size: 18px
+    .about
+        padding-bottom: 40px
+        h1
+            font-size: 28px
+            margin-bottom: 25px
+        &-block
+            margin-bottom: 0
+            h3
+                font-size: 18px
+            p
+                font-size: 16px
+                padding-top: 0px
+                padding-bottom: 0px
+    .service
+        padding-top: 40px
+        h1
+            font-size: 28px
+            margin-bottom: 40px
+    .service-content-left
+        h3
+            font-size: 22px
+        p
+            font-size: 16px
+    .works
+        padding-top: 40px
+        h1
+            font-size: 28px
+            margin-bottom: 40px
+    .works-content-block
+        h3
+            font-size: 22px
+    .works-content-block-text
+        b
+            font-size: 16px
+        small
+            font-size: 16px
+    .works-link
+        font-size: 16px
+    .contacts
+        h1
+            font-size: 28px
+            margin-bottom: 100px
+    .works-content-block
+        margin-bottom: 20px
+    .contacts-content-left input
+        font-size: 16px
+    .contacts-content-left textarea
+        font-size: 16px
+    .contacts-content-left #contacts-btn
+        font-size: 18px
+    .contacts-content-right p
+        font-size: 14px
+    .contacts-content-right
+        padding-top: 20px
+    .contacts-content-right .right-block span
+        font-size: 16px
+    .contacts-content-right .right-block a
+        font-size: 16px
+    .popup-sent
+        width: 90%
+    .popup-sent label textarea
+        height: 150px
+        font-size: 16px
+        margin-bottom: 25px
+    .popup-sent label input
+        font-size: 16px
+    .popup-corporate
+        width: 90%
+    .popup-order
+        width: 90%
+    .popup-wrap-img
+        width: 65%
+@media screen and ( max-width: 575px )
+    .container
+        max-width: 100%
+    .burger
+        width: 40px
+        height: 20px
+        cursor: pointer
+        span
+            width: 40px
+            height: 1px
+            background-color: #fff
+            position: relative
+            display: block
+            &::before
+                content: ''
+                position: absolute
+                top: -10px
+                left: 0
+                background-color: #fff
+                width: 40px
+                height: 1px
+            &::after
+                content: ''
+                position: absolute
+                top: 10px
+                left: 0
+                background-color: #fff
+                width: 40px
+                height: 1px
+    .header
+        padding-top: 20px
+    .header-content .nav ul li a
+        font-size: 16px
+    .hero
+        padding-bottom: 36px
+        &::before
+            content: ''
+            position: absolute
+            background: url('../img/rus-320.png') no-repeat center
+            width: 203px
+            height: 301px
+            right: 50%
+            transform: translateX(50%)
+            top: 75px
+        &-btn
+            font-size: 16px
+            padding: 13px 23px
+
+        span
+            font-size: 16px
+            margin-bottom: 5px
+            padding-top: 184px
+        h1
+            font-size: 22px
+    .about
+        padding-top: 30px
+        h1
+            font-size: 24px
+            margin-bottom: 15px
+    .about-block
+        h3
+            font-size: 18px
+            padding-top: 8px
+        p
+            line-height: 24px
+            margin-bottom: 5px
+    .about-block::after
+        left: 7px
+    .about-block
+        padding-left: 55px
+    .about-block1
+        position: relative
+        &::after
+            content: ''
+            width: 30px
+            height: 50px
+            position: absolute
+            font-size: 20px
+            top: 50%
+            background: url('../img/1-m.svg') no-repeat center
+    .about-block2
+        position: relative
+        &::after
+            content: ''
+            width: 30px
+            height: 50px
+            position: absolute
+            font-size: 20px
+            top: 50%
+            background: url('../img/2-m.svg') no-repeat center
+    .about-block3
+        position: relative
+        &::after
+            content: ''
+            width: 30px
+            height: 50px
+            position: absolute
+            font-size: 20px
+            top: 50%
+            background: url('../img/3-m.svg') no-repeat center
+    .about-block4
+        position: relative
+        &::after
+            content: ''
+            width: 30px
+            height: 50px
+            position: absolute
+            font-size: 20px
+            top: 50%
+            background: url('../img/4-m.svg') no-repeat center
+    .service h1
+        font-size: 24px
+        margin-bottom: 30px
+    .service
+        padding-top: 30px
+    .service-content-left p
+        padding: 0px 0px
+        margin-bottom: 0px
+    .service-btn
+        font-size: 16px
+    .service-content-left h3
+        padding-top: 0
+    .service-btn
+        padding: 13px 60px
+    .service-content-left h3
+        margin-bottom: 20px
+    .service-content-left h3::after
+        bottom: -15px        
+    .works h1
+        font-size: 24px
+        margin-bottom: 30px
+    .works-content-block h3
+        padding-top: 0
+        margin-bottom: 30px
+    .works-content-block img
+        margin-bottom: 40px
+
+    .works
+        padding-top: 30px
+    .works-small-link
+        display: block
+    .works-content-block-text
+        display: block
+        margin-bottom: 15px
+        span
+            &::after
+                bottom: -27px
+    .works-small-child::after
+        display: none
+    .works-link
+        padding-top: 5px
+
+    .link-small
+        display: block
+        padding-left: 0px
+        font-size: 14px
+    .contacts-content-right p
+        width: 219px
+    .copyright-wrap span
+        display: none
+    .copyright-wrap
+        justify-content: center
+        padding-top: 8px
+    .contacts-content-left #contacts-btn
+        width: 100%
+    .contacts-wrap
+        display: block
+    .contacts-content-left input
+        height: 30px
+
+    .popup-sent
+        width: 310px
+        overflow-y: scroll
+        max-height: 100%
+
+    .overlay-close
+        top: 60px
+        right: 15px
+    .popup-sent label input
+        width: 90%
+        font-size: 16px
+        margin-bottom: 20px
+    .popup-sent label textarea
+        width: 90%
+        margin-bottom: 22px
+        font-size: 16px
+    .popup-wrap
+        padding-top: 60px
+    .popup-sent #popup-btn
+        width: 85%
+        font-size: 18px
+        height: 46px
+    .contacts-content-left #contacts-btn
+        height: 48px
+    .popup-contact
+        margin-bottom: 0
+    .popup-corporate
+        width: 95%
+        padding-top: 15px
+        p
+            margin-bottom: 15px
+            padding-top: 45px
+    .popup-corporate label input
+        margin-bottom: 15px
+        font-size: 14px
+        width: 80%
+        height: 40px
+    .popup-corporate #popup-btn
+        font-size: 14px
+    .popup-corporate label textarea
+        font-size: 14px
+        width: 80%
+        height: 100px    
+    .popup-order
+        width: 95%
+        padding-top: 15px
+    .popup-wrap
+        padding-top: 15px
+    .popup-order label input
+        margin-bottom: 15px
+        font-size: 14px
+        width: 80%
+        height: 40px
+    .popup-order #popup-btn
+        font-size: 14px
+    .popup-order label textarea
+        font-size: 14px
+        width: 80%
+        height: 100px
+    .popup-visit-text p
+        font-size: 24px
+    .overlay-close
+        top: 10px
+    .overlay-close::before
+        width: 35px
+        height: 1px
+    .overlay-close::after
+        width: 35px
+        height: 1px
+    .burger span
+        width: 35px    
+    .burger span::before
+        width: 35px
+    .burger span::after
+        width: 35px   
+    .popup-wrap-img
+        top: 58%
+        width: 65%   
+    //консультация
+    .popup-sent label input
+        width: 222px
+        font-size: 14px
+    .popup-sent label textarea
+        height: 100px
+        width: 222px
+        font-size: 14px
+    .popup-sent
+        padding-top: 15%
+        padding-bottom: 40px
+        width: 90%
+        overflow-y: visible
+    .popup-sent #popup-btn
+        width: min-content
+    .overlay-close-consult
+        top: 17 px
+    .contacts-content-right.popup-contact
+        display: none
+    .popup-sent label input
+        height: 40px

@@ -1,0 +1,49 @@
+.hero
+    background-color: #0d0d0d
+    padding-top: 200px
+    padding-bottom: 250px
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        width: 490px
+        height: 726px
+        right: 0
+        top: 0px
+        background: url('../img/rus.png') no-repeat center
+    &::before
+        content: ''
+        position: absolute
+        background: url('../img/rus-mobile.png') no-repeat center
+        display: none
+        width: 317px
+        height: 487px
+        right: 0px
+        top: 95px
+    span
+        font-size: 30px
+        margin-bottom: 10px
+
+    h1
+        font-size: 60px
+        line-height: 80px
+        width: 540px
+        margin-bottom: 20px
+    p
+        font-size: 20px
+    &-btn
+        padding: 15px 25px
+        background-color: #f70404
+        font-size: 22px
+        width: min-content
+        cursor: pointer
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-top: 30px
+        font-family: 'Roboto', sans-serif
+        font-weight: 400
+        &:hover
+            background-color: #fff
+            color: #000
+            transition: 0.3s

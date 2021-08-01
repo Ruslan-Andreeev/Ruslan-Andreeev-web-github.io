@@ -1,0 +1,72 @@
+.service
+    padding-top: 100px
+    background-color: #0d0d0d
+    padding-bottom: 130px
+    h1
+        text-align: center
+        font-size: 40px
+        margin-bottom: 100px
+    &-content
+        display: flex
+        justify-content: space-between
+        &-left
+            width: 48%
+            padding: 50px 20px
+            background-color: #151515
+            h3
+                font-size: 30px
+                margin-bottom: 10px
+                font-family: 'Roboto', sans-serif
+                padding-top: 20px
+                text-align: center
+                position: relative
+                margin-bottom: 50px
+                &::after
+                    content: ''
+                    width: 150px
+                    height: 2px
+                    position: absolute
+                    background-color: #f70404 
+                    bottom: -25px
+                    left: 50%
+                    transform: translateX(-50%)                    
+            p
+                font-size: 18px
+                line-height: 30px
+                display: flex
+                margin-bottom: 50px
+                text-align: center
+                padding: 0px 50px
+                height: 180px
+            span
+                font-size: 18px
+                line-height: 30px
+                display: flex
+                margin-bottom: 20px
+                text-align: center
+                display: block
+                font-family: 'Roboto', sans-serif
+                position: relative
+                &::after
+                    content: ''
+                    width: 70px
+                    height: 2px
+                    position: absolute
+                    background-color: #f70404 
+                    top:  -20px
+                    left: 50%
+                    transform: translateX(-50%) 
+.service-btn
+    padding: 17px 60px
+    background-color: #FFF
+    margin: auto 
+    width: min-content 
+    color: #000  
+    cursor: pointer 
+    font-size: 18px
+    &:hover
+        transition: 0.3s
+        background-color: #f70404 
+        color: #FFF             
+                
+
